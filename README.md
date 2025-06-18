@@ -1,53 +1,78 @@
 # 💸 Split Bill Calculator
 
-A responsive and user-friendly bill-splitting application built using **ReactJS** and **Styled Components**. This app lets you quickly calculate how much each person should pay — with support for tip percentages, uneven splits, rounding, currency selection, and more.
+A smart and customizable bill splitting calculator built with **React** and **styled-components**. It allows users to evenly or unevenly divide a bill among people, with options for tipping, rounding up, and multi-currency support.
 
 ---
 
-## 🔗 Live Demo
+## 🚀 Features
 
-👉 [Click here to view live](https://your-deployed-link.netlify.app)
+### ✅ Core Functionalities
+- 💰 **Split Bill** evenly or manually between multiple people.
+- 💸 **Add Tip** using predefined or custom percentage.
+- 💱 **Select Currency**: INR (₹), USD ($), EUR (€), GBP (£).
 
----
+### 🎯 Customizations
+- 🔢 **Round Up** per-person share to the nearest whole number.
+- 🧍 **Split Unevenly**: Input individual amounts per person.
+- 📋 **Copy to Clipboard** the final result.
+- 📤 **Share Result** via supported mobile/web sharing.
 
-## 📦 Tech Stack
+### 🌙 Theming
+- 🌗 **Light/Dark Mode** toggle with smooth UI transitions.
 
-- ⚛️ React (Vite + Functional Components)
-- 💅 Styled Components
-- 🧮 JavaScript
-- 🎨 Responsive Design
-
----
-
-## 🎯 Features
-
-### ✅ Core Features
-- Enter total bill, tip %, and number of people
-- Real-time per person amount calculation
-- Responsive on all screen sizes
-- Input validation (no zero or negative entries)
-
-### 🌟 Bonus Features
-- 💸 **Uneven Split**: Custom amount per person
-- 🌐 **Currency Selector**: ₹, $, €, £
-- 🌗 **Dark/Light Mode Toggle**
-- 🧮 **Round-Up Option** per person
-- 📤 **Copy or Share** results
+### ⚙️ Validations
+- Ensures inputs are valid numbers.
+- Prevents splitting by zero people.
+- Warns if custom split doesn’t match the total.
 
 ---
 
-## 🖥️ Screenshots
+## 🛠️ Technologies Used
 
-| Light Mode                        | Dark Mode                        |
-|----------------------------------|----------------------------------|
-| ![light](./screenshots/light.png) | ![dark](./screenshots/dark.png) |
+- **React** (with Hooks)
+- **Styled-components**
+- **React Icons** (Feather Icons)
+- **JavaScript (ES6+)**
+- **CSS Animations**
 
 ---
 
-## ⚙️ Getting Started
+## 📁 Folder Structure
 
-### 1. Clone the repo
+src/
+│
+├── components/
+│ ├── Calculator.js # Main calculator logic and layout
+│ ├── InputField.js # Reusable input field with prefix
+│ ├── TipSelector.js # Tip percentage buttons + input
+│ └── ResultDisplay.js # Per-person result display
+│
+├── utils/
+│ ├── calculateSplit.js # Helper function to compute split
+│ └── validateInput.js # Input validation logic
+│
+├── themes/
+│ └── theme.js # Light and dark theme definitions
+│
+└── App.js # Main App wrapper
+
+yaml
+Copy
+Edit
+
+---
+
+## 📸 Screenshots
+
+| Light Mode | Dark Mode |
+|------------|-----------|
+| ![light](./screenshots/light-mode.png) | ![dark](./screenshots/dark-mode.png) |
+
+---
+
+## ⚡ Getting Started
+
+### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/split-bill-calculator.git
+git clone https://github.com/your-username/split-bill-calculator.git
 cd split-bill-calculator
-
