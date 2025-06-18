@@ -40,7 +40,7 @@ A responsive and user-friendly bill-splitting application built using **ReactJS*
 
 | Light Mode                        | Dark Mode                        |
 |----------------------------------|----------------------------------|
-| ![light](lightmode.png) | ![dark](darkmode.png) |
+| ![light](public/lightmode.png) | ![dark](public/darkmode.png) |
 
 ---
 
